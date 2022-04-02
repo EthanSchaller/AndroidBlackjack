@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.GameFragment">
+
+    <TextView
+        android:id="@+id/hous_Ttl"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Total Score:  0"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hous_crd3" />
+
+    <ImageView
+        android:id="@+id/plr_crd1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Name" />
+
+    <ImageView
+        android:id="@+id/plr_crd2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/plr_crd1"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Name"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/hous_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="House's Deck"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plyr_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Player's Deck"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Ttl" />
+
+    <ImageView
+        android:id="@+id/plr_crd4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/plr_crd3"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Name" />
+
+    <ImageView
+        android:id="@+id/plr_crd5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/plr_crd4"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Name" />
+
+    <ImageView
+        android:id="@+id/plr_crd3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/plr_crd2"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Name" />
+
+    <ImageView
+        android:id="@+id/hous_crd3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/hous_crd2"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Name" />
+
+    <ImageView
+        android:id="@+id/hous_crd2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/hous_crd1"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Name" />
+
+    <ImageView
+        android:id="@+id/hous_crd4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/hous_crd3"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Name" />
+
+    <ImageView
+        android:id="@+id/hous_crd1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Name" />
+
+    <ImageView
+        android:id="@+id/hous_crd5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_back"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/hous_crd4"
+        app:layout_constraintTop_toBottomOf="@+id/hous_Name" />
+
+    <Button
+        android:id="@+id/bttn_Hit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hit"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Ttl" />
+
+    <Button
+        android:id="@+id/bttn_Strt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="START"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plyr_Ttl" />
+
+    <Button
+        android:id="@+id/bttn_Stnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Stand"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_Hit" />
+
+    <TextView
+        android:id="@+id/plyr_Ttl"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Total Score:  0"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plr_crd2" />
+
+    <TextView
+        android:id="@+id/TtlPnts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Total Points: 0"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_Hit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

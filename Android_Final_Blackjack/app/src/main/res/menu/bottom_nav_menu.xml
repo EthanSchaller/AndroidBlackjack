@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/ic_baseline_face_24"
+        android:title="User" />
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/ic_baseline_games_24"
+        android:title="Game" />
+
+    <item
+        android:id="@+id/navigation_credits"
+        android:icon="@drawable/ic_baseline_copyright_24"
+        android:title="Credits" />
+
+</menu>
